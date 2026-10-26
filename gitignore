@@ -1,0 +1,15 @@
+# Datos pesados: se bajan con codigo/descarga.py, no se suben a GitHub
+data/
+
+# Archivos que genera Python
+__pycache__/
+*.pyc
+
+# Notebooks / entornos virtuales
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Archivos de sistema (Mac / Windows)
+.DS_Store
+Thumbs.db
