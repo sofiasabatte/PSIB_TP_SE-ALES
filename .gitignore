@@ -13,3 +13,8 @@ venv/
 # Archivos de sistema (Mac / Windows)
 .DS_Store
 Thumbs.db
+
+resultados/calidad/
+resultados/rpicos/
+resultados/rr/
+resultados/logs/
