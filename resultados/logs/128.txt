@@ -1,0 +1,11 @@
+{'registro': '128', 'pot_0.5_40Hz_%': np.float64(99.82), 'pot_>62.5Hz_%': np.float64(0.0871), 'pico_50Hz_x': np.float64(0.24), 'pico_60Hz_x': np.float64(0.97)}
+figuras en resultados/figuras
+  128:   0.5 h procesadas  128:   1.0 h procesadas  128:   1.5 h procesadas  128:   2.0 h procesadas  128:   2.5 h procesadas  128:   3.0 h procesadas  128:   3.5 h procesadas  128:   4.0 h procesadas  128:   4.5 h procesadas  128:   5.0 h procesadas  128:   5.5 h procesadas  128:   6.0 h procesadas  128:   6.5 h procesadas  128:   7.0 h procesadas  128:   7.5 h procesadas  128:   8.0 h procesadas  128:   8.5 h procesadas  128:   9.0 h procesadas  128:   9.5 h procesadas  128:  10.0 h procesadas  128:  10.5 h procesadas  128:  11.0 h procesadas  128:  11.5 h procesadas  128:  12.0 h procesadas  128:  12.5 h procesadas  128:  13.0 h procesadas  128:  13.5 h procesadas  128:  14.0 h procesadas  128:  14.5 h procesadas  128:  15.0 h procesadas  128:  15.5 h procesadas  128:  16.0 h procesadas  128:  16.5 h procesadas  128:  17.0 h procesadas  128:  17.5 h procesadas  128:  18.0 h procesadas  128:  18.5 h procesadas  128:  19.0 h procesadas  128:  19.5 h procesadas  128:  20.0 h procesadas  128:  20.5 h procesadas  128:  21.0 h procesadas  128:  21.5 h procesadas  128:  22.0 h procesadas  128:  22.5 h procesadas  128:  23.0 h procesadas  128:  23.5 h procesadas  128:  24.0 h procesadas
+  128: 1/8640 ventanas ruidosas (0.0%) -> resultados/calidad/128.csv
+{'registro': '128', 'subconjunto': 'todo', 'VP': 83431, 'FN': 3, 'FP': 3, 'Se_%': 100.0, 'VPP_%': 100.0}
+{'registro': '128', 'subconjunto': 'ventanas_limpias', 'VP': 83420, 'FN': 1, 'FP': 2, 'Se_%': 100.0, 'VPP_%': 100.0}
+  128: 83441 intervalos, 82920 validos (99.4%)
+      fuera_rango  6
+      ruido        12
+      ectopico     500
+      transicion   3

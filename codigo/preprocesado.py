@@ -142,7 +142,8 @@ def figura_ruido(reg, filas):
     for ax, fila, txt in [(axs[0], tipica, "tipica"), (axs[1], peor, "con peor bSQI")]:
         v0, v1 = fila["inicio_muestra"], fila["fin_muestra"]
         a = max(v0 - margen, 0)
-        x = comun.filtrar_ecg(comun.leer_tramo(reg, a, v1 + margen))
+        fin = min(v1 + margen, comun.largo_registro(reg))
+        x = comun.filtrar_ecg(comun.leer_tramo(reg, a, fin))
         r_pt = comun.pan_tompkins(x) + a
         r_xq = processing.xqrs_detect(x, fs=fs, verbose=False) + a
         seg = x[v0 - a:v1 - a]

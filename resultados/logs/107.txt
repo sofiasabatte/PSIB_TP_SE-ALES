@@ -1,0 +1,11 @@
+{'registro': '107', 'pot_0.5_40Hz_%': np.float64(99.68), 'pot_>62.5Hz_%': np.float64(0.1235), 'pico_50Hz_x': np.float64(0.24), 'pico_60Hz_x': np.float64(0.88)}
+figuras en resultados/figuras
+  107:   0.5 h procesadas  107:   1.0 h procesadas  107:   1.5 h procesadas  107:   2.0 h procesadas  107:   2.5 h procesadas  107:   3.0 h procesadas  107:   3.5 h procesadas  107:   4.0 h procesadas  107:   4.5 h procesadas  107:   5.0 h procesadas  107:   5.5 h procesadas  107:   6.0 h procesadas  107:   6.5 h procesadas  107:   7.0 h procesadas  107:   7.5 h procesadas  107:   8.0 h procesadas  107:   8.5 h procesadas  107:   9.0 h procesadas
+  107: 1/3240 ventanas ruidosas (0.0%) -> resultados/calidad/107.csv
+{'registro': '107', 'subconjunto': 'todo', 'VP': 33652, 'FN': 8, 'FP': 13, 'Se_%': 99.98, 'VPP_%': 99.96}
+{'registro': '107', 'subconjunto': 'ventanas_limpias', 'VP': 33642, 'FN': 8, 'FP': 13, 'Se_%': 99.98, 'VPP_%': 99.96}
+  107: 33671 intervalos, 33537 validos (99.6%)
+      fuera_rango  2
+      ruido        11
+      ectopico     120
+      transicion   1

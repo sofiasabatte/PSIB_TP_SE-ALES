@@ -1,0 +1,11 @@
+{'registro': '033', 'pot_0.5_40Hz_%': np.float64(99.65), 'pot_>62.5Hz_%': np.float64(0.136), 'pico_50Hz_x': np.float64(0.22), 'pico_60Hz_x': np.float64(0.86)}
+figuras en resultados/figuras
+  033:   0.5 h procesadas  033:   1.0 h procesadas  033:   1.5 h procesadas  033:   2.0 h procesadas  033:   2.5 h procesadas  033:   3.0 h procesadas  033:   3.5 h procesadas  033:   4.0 h procesadas  033:   4.5 h procesadas  033:   5.0 h procesadas  033:   5.5 h procesadas  033:   6.0 h procesadas  033:   6.5 h procesadas  033:   7.0 h procesadas  033:   7.5 h procesadas  033:   8.0 h procesadas  033:   8.5 h procesadas  033:   9.0 h procesadas  033:   9.5 h procesadas  033:  10.0 h procesadas  033:  10.5 h procesadas  033:  11.0 h procesadas  033:  11.5 h procesadas  033:  12.0 h procesadas  033:  12.5 h procesadas  033:  13.0 h procesadas  033:  13.5 h procesadas  033:  14.0 h procesadas  033:  14.5 h procesadas  033:  15.0 h procesadas  033:  15.5 h procesadas  033:  16.0 h procesadas  033:  16.5 h procesadas  033:  17.0 h procesadas  033:  17.5 h procesadas  033:  18.0 h procesadas  033:  18.5 h procesadas  033:  19.0 h procesadas  033:  19.5 h procesadas  033:  20.0 h procesadas  033:  20.5 h procesadas  033:  21.0 h procesadas  033:  21.5 h procesadas  033:  22.0 h procesadas  033:  22.5 h procesadas  033:  23.0 h procesadas  033:  23.5 h procesadas  033:  24.0 h procesadas
+  033: 67/8640 ventanas ruidosas (0.8%) -> resultados/calidad/033.csv
+{'registro': '033', 'subconjunto': 'todo', 'VP': 109727, 'FN': 18, 'FP': 517, 'Se_%': 99.98, 'VPP_%': 99.53}
+{'registro': '033', 'subconjunto': 'ventanas_limpias', 'VP': 108943, 'FN': 18, 'FP': 193, 'Se_%': 99.98, 'VPP_%': 99.82}
+  033: 110256 intervalos, 108233 validos (98.2%)
+      fuera_rango  21
+      ruido        1132
+      ectopico     848
+      transicion   22

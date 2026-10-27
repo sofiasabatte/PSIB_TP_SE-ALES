@@ -10,7 +10,7 @@
 # Las rutas son relativas a la carpeta principal del repo (correr siempre desde ahi).
 
 # --- Datos -----------------------------------------------------------------
-DATA_DIR = "data"            # carpeta con 001.hea, 001.dat, 001.atr, 001.qrs, ...
+DATA_DIR = "data/shdb-af"           # carpeta con 001.hea, 001.dat, 001.atr, 001.qrs, ...
 PN_DIR = "shdb-af/1.0.1"     # si un registro no esta en DATA_DIR, se lee directo de PhysioNet
 FS = 200                     # Hz. Ojo: grabado a 125 Hz y remuestreado a 200 Hz (Tsutsui et al. 2025)
 CANAL = 0                    # 0 = ECG1, 1 = ECG2. Se procesa un solo canal.

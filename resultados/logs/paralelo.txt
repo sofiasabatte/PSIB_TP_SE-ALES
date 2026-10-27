@@ -1,0 +1,28 @@
+Matplotlib is building the font cache; this may take a moment.
+Traceback (most recent call last):
+  File "/Users/juanacastex/Documents/GitHub/PSIB_TP_SE-ALES/codigo/espectro.py", line 90, in <module>
+    filas = [analizar(reg) for reg in comun.registros_a_procesar()]
+             ^^^^^^^^^^^^^
+  File "/Users/juanacastex/Documents/GitHub/PSIB_TP_SE-ALES/codigo/espectro.py", line 44, in analizar
+    n_total = comun.largo_registro(reg)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanacastex/Documents/GitHub/PSIB_TP_SE-ALES/codigo/comun.py", line 58, in largo_registro
+    return wfdb.rdheader(nombre, pn_dir=pn).sig_len
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanacastex/venvs/tp_senales/lib/python3.12/site-packages/wfdb/io/record.py", line 1851, in rdheader
+    header_content = download._stream_header(file_name, pn_dir)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanacastex/venvs/tp_senales/lib/python3.12/site-packages/wfdb/io/download.py", line 108, in _stream_header
+    content = f.read()
+              ^^^^^^^^
+  File "/Users/juanacastex/venvs/tp_senales/lib/python3.12/site-packages/wfdb/io/_url.py", line 580, in read
+    result = b"".join(self._read_range(start, end))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanacastex/venvs/tp_senales/lib/python3.12/site-packages/wfdb/io/_url.py", line 473, in _read_range
+    with RangeTransfer(self._current_url, req_start, req_end) as xfer:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/juanacastex/venvs/tp_senales/lib/python3.12/site-packages/wfdb/io/_url.py", line 167, in __init__
+    self._parse_headers(method, self._response)
+  File "/Users/juanacastex/venvs/tp_senales/lib/python3.12/site-packages/wfdb/io/_url.py", line 213, in _parse_headers
+    raise cls(
+wfdb.io._url.NetFileNotFoundError: 404 Error: Not Found for url: https://physionet.org/files/shdb-af/1.0.1/paralelo.hea
