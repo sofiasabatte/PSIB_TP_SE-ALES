@@ -1,11 +1,0 @@
-{'registro': '011', 'pot_0.5_40Hz_%': np.float64(99.86), 'pot_>62.5Hz_%': np.float64(0.0441), 'pico_50Hz_x': np.float64(0.17), 'pico_60Hz_x': np.float64(0.79)}
-figuras en resultados/figuras
-  011:   0.5 h procesadas  011:   1.0 h procesadas  011:   1.5 h procesadas  011:   2.0 h procesadas  011:   2.5 h procesadas  011:   3.0 h procesadas  011:   3.5 h procesadas  011:   4.0 h procesadas  011:   4.5 h procesadas  011:   5.0 h procesadas  011:   5.5 h procesadas  011:   6.0 h procesadas  011:   6.5 h procesadas  011:   7.0 h procesadas  011:   7.5 h procesadas  011:   8.0 h procesadas  011:   8.5 h procesadas  011:   9.0 h procesadas  011:   9.5 h procesadas  011:  10.0 h procesadas  011:  10.5 h procesadas  011:  11.0 h procesadas  011:  11.5 h procesadas  011:  12.0 h procesadas  011:  12.5 h procesadas  011:  13.0 h procesadas  011:  13.5 h procesadas  011:  14.0 h procesadas  011:  14.5 h procesadas  011:  15.0 h procesadas  011:  15.5 h procesadas  011:  16.0 h procesadas  011:  16.5 h procesadas  011:  17.0 h procesadas  011:  17.5 h procesadas  011:  18.0 h procesadas  011:  18.5 h procesadas  011:  19.0 h procesadas  011:  19.5 h procesadas  011:  20.0 h procesadas  011:  20.5 h procesadas  011:  21.0 h procesadas  011:  21.5 h procesadas  011:  22.0 h procesadas  011:  22.5 h procesadas  011:  23.0 h procesadas  011:  23.5 h procesadas  011:  24.0 h procesadas  011:  24.1 h procesadas
-  011: 2/8670 ventanas ruidosas (0.0%) -> resultados/calidad/011.csv
-{'registro': '011', 'subconjunto': 'todo', 'VP': 102230, 'FN': 23, 'FP': 104, 'Se_%': 99.98, 'VPP_%': 99.9}
-{'registro': '011', 'subconjunto': 'ventanas_limpias', 'VP': 102203, 'FN': 21, 'FP': 90, 'Se_%': 99.98, 'VPP_%': 99.91}
-  011: 102341 intervalos, 102111 validos (99.8%)
-      fuera_rango  30
-      ruido        41
-      ectopico     152
-      transicion   7

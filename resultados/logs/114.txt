@@ -1,11 +1,0 @@
-{'registro': '114', 'pot_0.5_40Hz_%': np.float64(99.73), 'pot_>62.5Hz_%': np.float64(0.0895), 'pico_50Hz_x': np.float64(0.14), 'pico_60Hz_x': np.float64(0.83)}
-figuras en resultados/figuras
-  114:   0.5 h procesadas  114:   1.0 h procesadas  114:   1.5 h procesadas  114:   2.0 h procesadas  114:   2.5 h procesadas  114:   3.0 h procesadas  114:   3.5 h procesadas  114:   4.0 h procesadas  114:   4.5 h procesadas  114:   5.0 h procesadas  114:   5.5 h procesadas  114:   6.0 h procesadas  114:   6.5 h procesadas  114:   7.0 h procesadas  114:   7.5 h procesadas  114:   8.0 h procesadas  114:   8.5 h procesadas  114:   9.0 h procesadas  114:   9.5 h procesadas  114:  10.0 h procesadas  114:  10.5 h procesadas  114:  11.0 h procesadas  114:  11.5 h procesadas  114:  12.0 h procesadas  114:  12.5 h procesadas  114:  13.0 h procesadas  114:  13.5 h procesadas  114:  14.0 h procesadas  114:  14.5 h procesadas  114:  15.0 h procesadas  114:  15.5 h procesadas  114:  16.0 h procesadas  114:  16.5 h procesadas  114:  17.0 h procesadas  114:  17.5 h procesadas  114:  18.0 h procesadas  114:  18.5 h procesadas  114:  19.0 h procesadas  114:  19.5 h procesadas  114:  20.0 h procesadas  114:  20.5 h procesadas  114:  21.0 h procesadas  114:  21.5 h procesadas  114:  22.0 h procesadas  114:  22.5 h procesadas  114:  23.0 h procesadas  114:  23.5 h procesadas  114:  24.0 h procesadas  114:  24.1 h procesadas
-  114: 10/8658 ventanas ruidosas (0.1%) -> resultados/calidad/114.csv
-{'registro': '114', 'subconjunto': 'todo', 'VP': 79876, 'FN': 5, 'FP': 90, 'Se_%': 99.99, 'VPP_%': 99.89}
-{'registro': '114', 'subconjunto': 'ventanas_limpias', 'VP': 79767, 'FN': 1, 'FP': 13, 'Se_%': 100.0, 'VPP_%': 99.98}
-  114: 79974 intervalos, 79714 validos (99.7%)
-      fuera_rango  40
-      ruido        167
-      ectopico     34
-      transicion   19

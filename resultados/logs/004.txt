@@ -1,11 +1,0 @@
-{'registro': '004', 'pot_0.5_40Hz_%': np.float64(99.62), 'pot_>62.5Hz_%': np.float64(0.1472), 'pico_50Hz_x': np.float64(0.25), 'pico_60Hz_x': np.float64(0.74)}
-figuras en resultados/figuras
-  004:   0.5 h procesadas  004:   1.0 h procesadas  004:   1.5 h procesadas  004:   2.0 h procesadas  004:   2.5 h procesadas  004:   3.0 h procesadas  004:   3.5 h procesadas  004:   4.0 h procesadas  004:   4.5 h procesadas  004:   5.0 h procesadas  004:   5.5 h procesadas  004:   6.0 h procesadas  004:   6.5 h procesadas  004:   7.0 h procesadas  004:   7.5 h procesadas  004:   8.0 h procesadas  004:   8.5 h procesadas  004:   9.0 h procesadas  004:   9.5 h procesadas  004:  10.0 h procesadas  004:  10.5 h procesadas  004:  11.0 h procesadas  004:  11.5 h procesadas  004:  12.0 h procesadas  004:  12.5 h procesadas  004:  13.0 h procesadas  004:  13.5 h procesadas  004:  14.0 h procesadas  004:  14.5 h procesadas  004:  15.0 h procesadas  004:  15.5 h procesadas  004:  16.0 h procesadas  004:  16.5 h procesadas  004:  17.0 h procesadas  004:  17.5 h procesadas  004:  18.0 h procesadas  004:  18.5 h procesadas  004:  19.0 h procesadas  004:  19.5 h procesadas  004:  20.0 h procesadas  004:  20.5 h procesadas  004:  21.0 h procesadas  004:  21.5 h procesadas  004:  22.0 h procesadas  004:  22.5 h procesadas  004:  23.0 h procesadas  004:  23.5 h procesadas  004:  24.0 h procesadas  004:  24.1 h procesadas
-  004: 0/8670 ventanas ruidosas (0.0%) -> resultados/calidad/004.csv
-{'registro': '004', 'subconjunto': 'todo', 'VP': 112516, 'FN': 1, 'FP': 0, 'Se_%': 100.0, 'VPP_%': 100.0}
-{'registro': '004', 'subconjunto': 'ventanas_limpias', 'VP': 112516, 'FN': 1, 'FP': 0, 'Se_%': 100.0, 'VPP_%': 100.0}
-  004: 112525 intervalos, 112150 validos (99.7%)
-      fuera_rango  0
-      ruido        0
-      ectopico     368
-      transicion   7

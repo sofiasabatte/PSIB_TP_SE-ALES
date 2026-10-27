@@ -1,11 +1,0 @@
-{'registro': '131', 'pot_0.5_40Hz_%': np.float64(99.37), 'pot_>62.5Hz_%': np.float64(0.1815), 'pico_50Hz_x': np.float64(0.21), 'pico_60Hz_x': np.float64(0.99)}
-figuras en resultados/figuras
-  131:   0.5 h procesadas  131:   1.0 h procesadas  131:   1.5 h procesadas  131:   2.0 h procesadas  131:   2.5 h procesadas  131:   3.0 h procesadas  131:   3.5 h procesadas  131:   4.0 h procesadas  131:   4.5 h procesadas  131:   5.0 h procesadas  131:   5.5 h procesadas  131:   6.0 h procesadas  131:   6.5 h procesadas  131:   7.0 h procesadas  131:   7.5 h procesadas  131:   8.0 h procesadas  131:   8.5 h procesadas  131:   9.0 h procesadas  131:   9.5 h procesadas  131:  10.0 h procesadas  131:  10.5 h procesadas  131:  11.0 h procesadas  131:  11.5 h procesadas  131:  12.0 h procesadas  131:  12.5 h procesadas  131:  13.0 h procesadas  131:  13.5 h procesadas  131:  14.0 h procesadas  131:  14.5 h procesadas  131:  15.0 h procesadas  131:  15.5 h procesadas  131:  16.0 h procesadas  131:  16.5 h procesadas  131:  17.0 h procesadas  131:  17.5 h procesadas  131:  18.0 h procesadas  131:  18.5 h procesadas  131:  19.0 h procesadas  131:  19.5 h procesadas  131:  20.0 h procesadas  131:  20.5 h procesadas  131:  21.0 h procesadas  131:  21.5 h procesadas  131:  22.0 h procesadas  131:  22.5 h procesadas  131:  23.0 h procesadas  131:  23.5 h procesadas  131:  24.0 h procesadas
-  131: 1506/8640 ventanas ruidosas (17.4%) -> resultados/calidad/131.csv
-{'registro': '131', 'subconjunto': 'todo', 'VP': 83397, 'FN': 5480, 'FP': 11064, 'Se_%': 93.83, 'VPP_%': 88.29}
-{'registro': '131', 'subconjunto': 'ventanas_limpias', 'VP': 70484, 'FN': 2697, 'FP': 1903, 'Se_%': 96.31, 'VPP_%': 97.37}
-  131: 94470 intervalos, 71029 validos (75.2%)
-      fuera_rango  596
-      ruido        22072
-      ectopico     770
-      transicion   3

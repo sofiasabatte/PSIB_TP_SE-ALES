@@ -1,11 +1,0 @@
-{'registro': '036', 'pot_0.5_40Hz_%': np.float64(99.8), 'pot_>62.5Hz_%': np.float64(0.0863), 'pico_50Hz_x': np.float64(0.3), 'pico_60Hz_x': np.float64(0.78)}
-figuras en resultados/figuras
-  036:   0.5 h procesadas  036:   1.0 h procesadas  036:   1.5 h procesadas  036:   2.0 h procesadas  036:   2.5 h procesadas  036:   3.0 h procesadas  036:   3.5 h procesadas  036:   4.0 h procesadas  036:   4.5 h procesadas  036:   5.0 h procesadas  036:   5.5 h procesadas  036:   6.0 h procesadas  036:   6.5 h procesadas  036:   7.0 h procesadas  036:   7.5 h procesadas  036:   8.0 h procesadas  036:   8.5 h procesadas  036:   9.0 h procesadas  036:   9.5 h procesadas  036:  10.0 h procesadas  036:  10.5 h procesadas  036:  11.0 h procesadas  036:  11.5 h procesadas  036:  12.0 h procesadas  036:  12.5 h procesadas  036:  13.0 h procesadas  036:  13.5 h procesadas  036:  14.0 h procesadas  036:  14.5 h procesadas  036:  15.0 h procesadas  036:  15.5 h procesadas  036:  16.0 h procesadas  036:  16.5 h procesadas  036:  17.0 h procesadas  036:  17.5 h procesadas  036:  18.0 h procesadas  036:  18.5 h procesadas  036:  19.0 h procesadas  036:  19.5 h procesadas  036:  20.0 h procesadas  036:  20.5 h procesadas  036:  21.0 h procesadas  036:  21.5 h procesadas  036:  22.0 h procesadas  036:  22.5 h procesadas  036:  23.0 h procesadas  036:  23.5 h procesadas  036:  24.0 h procesadas
-  036: 0/8640 ventanas ruidosas (0.0%) -> resultados/calidad/036.csv
-{'registro': '036', 'subconjunto': 'todo', 'VP': 119366, 'FN': 2, 'FP': 19, 'Se_%': 100.0, 'VPP_%': 99.98}
-{'registro': '036', 'subconjunto': 'ventanas_limpias', 'VP': 119366, 'FN': 2, 'FP': 19, 'Se_%': 100.0, 'VPP_%': 99.98}
-  036: 119396 intervalos, 119100 validos (99.8%)
-      fuera_rango  40
-      ruido        0
-      ectopico     218
-      transicion   38

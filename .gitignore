@@ -1,4 +1,4 @@
-# Datos pesados: se bajan con codigo/descarga.py, no se suben a GitHub
+# Datos pesados: se bajan por cuenta propia, no se suben a GitHub
 data/
 
 # Archivos que genera Python
@@ -17,5 +17,6 @@ Thumbs.db
 resultados/calidad/
 resultados/rpicos/
 resultados/rr/
-resultados/logs/informe/
+resultados/logs/
 informe/
+

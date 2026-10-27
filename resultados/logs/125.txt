@@ -1,11 +1,0 @@
-{'registro': '125', 'pot_0.5_40Hz_%': np.float64(99.83), 'pot_>62.5Hz_%': np.float64(0.0712), 'pico_50Hz_x': np.float64(0.15), 'pico_60Hz_x': np.float64(0.72)}
-figuras en resultados/figuras
-  125:   0.5 h procesadas  125:   1.0 h procesadas  125:   1.5 h procesadas  125:   2.0 h procesadas  125:   2.5 h procesadas  125:   3.0 h procesadas  125:   3.5 h procesadas  125:   4.0 h procesadas  125:   4.5 h procesadas  125:   5.0 h procesadas  125:   5.5 h procesadas  125:   6.0 h procesadas  125:   6.5 h procesadas  125:   7.0 h procesadas  125:   7.5 h procesadas  125:   8.0 h procesadas  125:   8.5 h procesadas  125:   9.0 h procesadas  125:   9.5 h procesadas  125:  10.0 h procesadas  125:  10.5 h procesadas  125:  11.0 h procesadas  125:  11.5 h procesadas  125:  12.0 h procesadas  125:  12.5 h procesadas  125:  13.0 h procesadas  125:  13.5 h procesadas  125:  14.0 h procesadas  125:  14.5 h procesadas  125:  15.0 h procesadas  125:  15.5 h procesadas  125:  16.0 h procesadas  125:  16.5 h procesadas  125:  17.0 h procesadas  125:  17.5 h procesadas  125:  18.0 h procesadas  125:  18.5 h procesadas  125:  19.0 h procesadas  125:  19.5 h procesadas  125:  20.0 h procesadas  125:  20.5 h procesadas  125:  21.0 h procesadas  125:  21.5 h procesadas  125:  22.0 h procesadas  125:  22.5 h procesadas  125:  23.0 h procesadas  125:  23.5 h procesadas  125:  24.0 h procesadas
-  125: 0/8640 ventanas ruidosas (0.0%) -> resultados/calidad/125.csv
-{'registro': '125', 'subconjunto': 'todo', 'VP': 74781, 'FN': 0, 'FP': 0, 'Se_%': 100.0, 'VPP_%': 100.0}
-{'registro': '125', 'subconjunto': 'ventanas_limpias', 'VP': 74781, 'FN': 0, 'FP': 0, 'Se_%': 100.0, 'VPP_%': 100.0}
-  125: 74787 intervalos, 74256 validos (99.3%)
-      fuera_rango  0
-      ruido        0
-      ectopico     528
-      transicion   3
