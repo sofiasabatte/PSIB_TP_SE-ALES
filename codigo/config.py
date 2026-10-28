@@ -45,6 +45,14 @@ VENTANA_CALIDAD_S = 10       # largo de ventana para los indices de calidad
 UMBRAL_BSQI = 0.8            # bSQI = acuerdo Pan-Tompkins vs xqrs (Li et al. 2008). Valor inicial
 UMBRAL_KSQI = 5              # curtosis del ECG; ECG limpio > 5 (Li et al. 2008). Valor inicial
 
+# Criterio que decide si una ventana de 10 s es ruidosa.
+#   "bsqi"      -> solo bSQI < UMBRAL_BSQI (criterio del paper de la base SHDB-AF)
+#   "bsqi_ksqi" -> bSQI o kSQI (criterio anterior, queda para comparar)
+# Se eligió "bsqi" porque en la auditoría (auditar_criterio_ruido.py) las ventanas
+# marcadas solo por kSQI se detectan igual de bien que las limpias: eran ondas T altas,
+# no ruido.
+CRITERIO_RUIDO = "bsqi"
+
 # --- Deteccion de QRS (etapa 5) --------------------------------------------
 TOL_QRS_S = 0.150            # tolerancia para emparejar latidos (ANSI/AAMI EC57)
 

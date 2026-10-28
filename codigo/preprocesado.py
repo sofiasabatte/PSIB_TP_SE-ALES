@@ -19,8 +19,8 @@
 #             muscular o movimiento, no (Li, Mark y Clifford 2008).
 #       kSQI: curtosis del ECG. Un ECG limpio es "picudo" (curtosis > 5);
 #             el ruido tiende a una distribucion mas gaussiana.
-#   - marca como ruidosa la ventana con bSQI < UMBRAL_BSQI o kSQI < UMBRAL_KSQI
-#
+#   - marca como ruidosa la ventana segun config.CRITERIO_RUIDO (por defecto, bSQI < UMBRAL_BSQI)
+
 # El filtrado adaptativo (ALE/LMS, etapa 4) todavia no esta implementado:
 # por ahora las ventanas ruidosas se excluyen.
 #
@@ -44,6 +44,13 @@ from wfdb import processing
 import config
 import comun
 
+def es_ruidosa(bsqi, ksqi):
+    """Decide si una ventana de 10 s es ruidosa segun config.CRITERIO_RUIDO."""
+    if config.CRITERIO_RUIDO == "bsqi":
+        return bsqi < config.UMBRAL_BSQI
+    if config.CRITERIO_RUIDO == "bsqi_ksqi":
+        return bsqi < config.UMBRAL_BSQI or ksqi < config.UMBRAL_KSQI
+    raise ValueError(f"CRITERIO_RUIDO desconocido: {config.CRITERIO_RUIDO}")
 
 def calidad_registro(reg):
     fs = config.FS
@@ -69,7 +76,7 @@ def calidad_registro(reg):
             filas.append({
                 "inicio_muestra": v0, "fin_muestra": v1,
                 "bsqi": round(bsqi, 3), "ksqi": round(float(ksqi), 2),
-                "ruidosa": int(bsqi < config.UMBRAL_BSQI or ksqi < config.UMBRAL_KSQI),
+                "ruidosa": int(es_ruidosa(bsqi, ksqi)),
             })
         print(f"  {reg}: {b / fs / 3600:5.1f} h procesadas", end="\r")
 
