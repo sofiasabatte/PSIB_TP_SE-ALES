@@ -20,7 +20,7 @@
 # Por que tests no parametricos: las caracteristicas no son normales y hay
 # valores atipicos.
 #
-# Entra:  resultados/caracteristicas.csv
+# Entra:  resultados/caracteristicas.csv (sin config.REGISTROS_EXCLUIDOS)
 # Sale:   resultados/estadistica.csv
 #
 # Como correrlo:
@@ -116,7 +116,9 @@ def analizar(agregado):
 
 
 if __name__ == "__main__":
-    filas = comun.leer_csv(os.path.join(config.RES, "caracteristicas.csv"))
+    filas = comun.leer_caracteristicas()
+    for reg, motivo in config.REGISTROS_EXCLUIDOS.items():
+        print(f"Excluido: {reg} ({motivo})")
     agregado = por_sujeto(filas)
     sujetos_fa = {s for (s, e) in agregado if e == "FA"}
     sujetos_nofa = {s for (s, e) in agregado if e == "noFA"}

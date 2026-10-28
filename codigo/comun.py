@@ -308,3 +308,11 @@ def actualizar_csv(filas, ruta, columnas, clave="registro"):
 def leer_csv(ruta):
     with open(ruta, encoding="utf-8", newline="") as f:
         return list(csv.DictReader(f))
+
+
+def leer_caracteristicas():
+    """Ventanas de resultados/caracteristicas.csv sin los registros de
+    config.REGISTROS_EXCLUIDOS. Usarla en la estadistica y en la ROC para que
+    todas trabajen con el mismo conjunto."""
+    filas = leer_csv(os.path.join(config.RES, "caracteristicas.csv"))
+    return [f for f in filas if f["registro"] not in config.REGISTROS_EXCLUIDOS]

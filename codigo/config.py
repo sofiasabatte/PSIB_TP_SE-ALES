@@ -15,6 +15,11 @@ PN_DIR = "shdb-af/1.0.1"     # si un registro no esta en DATA_DIR, se lee direct
 FS = 200                     # Hz. Ojo: grabado a 125 Hz y remuestreado a 200 Hz (Tsutsui et al. 2025)
 CANAL = 0                    # 0 = ECG1, 1 = ECG2. Se procesa un solo canal.
 
+# Registros que se EXCLUYEN del analisis estadistico (estadistica.py, roc_umbral.py),
+# con el motivo. 005 y 020 tienen el mismo .dat (mismo md5) y son del mismo sujeto
+# (4899921); se saca uno. Lo consultamos con la profesora (Vicky).
+REGISTROS_EXCLUIDOS = {"020": "duplicado exacto de 005 (mismo md5, mismo sujeto 4899921)"}
+
 # Registros a procesar si no se pasan por linea de comandos.
 # "todos" = los 98 registros anotados de la etapa 0 (resultados/registros_anotados.csv).
 # Para probar con pocos: REGISTROS = ["001", "002"]
