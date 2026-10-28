@@ -5,7 +5,7 @@
 #            media_rr, sdnn, rmssd, nrmssd (etapa 8)
 #   Pili  -> lomb_bandas() y psd_ar() (etapa 8, parte espectral)
 # TODO (Sofi, avance):
-#   [ ] Comparar VENTANA_LATIDOS = 60 y 128: ventanas por clase y boxplots.
+#   [x] Comparar VENTANA_LATIDOS = 60 y 128: ventanas por clase y boxplots.
 # TODO (Juani, avance):
 #   [ ] Comparar medianas de nrmssd, tpr y shannon con Dash 2009
 #       (> 0,1; 0,54-0,77; > 0,7).

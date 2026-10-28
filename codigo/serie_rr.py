@@ -1,10 +1,10 @@
 # =============================================================================
 # RESPONSABLE: Sofi
 # TODO (Sofi, avance):
-#   [ ] Revisar tacograma_<reg>.png de varios registros.
-#   [ ] Comparar cuantos intervalos marca como "ectopico" DENTRO de la FA con
+#   [x] Revisar tacograma_<reg>.png de varios registros.
+#   [x] Comparar cuantos intervalos marca como "ectopico" DENTRO de la FA con
 #       QUITAR_ECTOPICOS = True y False (config.py) y como cambian los boxplots.
-#   [ ] Escribir el parrafo de la etapa 6 para el informe.
+#   [x] Escribir el parrafo de la etapa 6 para el informe.
 # =============================================================================
 # ETAPA 6: serie RR, correccion y tacograma
 #
