@@ -45,7 +45,7 @@ def particion_por_sujeto(filas, fraccion_test=FRACCION_TEST, semilla=SEMILLA):
 
 
 if __name__ == "__main__":
-    filas = comun.leer_csv(os.path.join(config.RES, "caracteristicas.csv"))
+    filas = comun.leer_caracteristicas()
     train, test = particion_por_sujeto(filas)
     for nombre, parte in [("train", train), ("test", test)]:
         n_fa = sum(f["etiqueta"] == "FA" for f in parte)
