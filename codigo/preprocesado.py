@@ -6,8 +6,8 @@
 #       en config.py y documentar el criterio.
 #   [ ] Escribir el parrafo de la etapa 3 para el informe.
 # TODO (Pili, TP completo):
-#   [ ] Etapa 4: implementar ale_nlms() siguiendo el plan del informe
-#       (Tabla "Diseno propuesto del ALE") o justificar no hacerlo.
+#   [x] Etapa 4: ale_nlms() implementada.
+#   [ ] Etapa 4: correr evaluar_ale.py y documentar la decision (ver abajo).
 # =============================================================================
 # ETAPA 3: filtrado y deteccion de ruido
 #
@@ -21,8 +21,10 @@
 #             el ruido tiende a una distribucion mas gaussiana.
 #   - marca como ruidosa la ventana segun config.CRITERIO_RUIDO (por defecto, bSQI < UMBRAL_BSQI)
 
-# El filtrado adaptativo (ALE/LMS, etapa 4) todavia no esta implementado:
-# por ahora las ventanas ruidosas se excluyen.
+# El filtrado adaptativo (ALE/NLMS, etapa 4) esta en ale_nlms(). Se evalua
+# sobre ventanas con bSQI bajo con evaluar_ale.py (resultados/evaluacion_ale.csv).
+# En la evaluacion no mejoro la deteccion de QRS, asi que el pipeline no lo
+# aplica: las ventanas ruidosas se excluyen.
 #
 # Entra:  registros
 # Sale:   resultados/calidad/<reg>.csv  (una fila por ventana de 10 s)
@@ -89,26 +91,37 @@ def calidad_registro(reg):
 
 
 
-def ale_nlms(x, delta, L, mu):
-    """ETAPA 4 (Pili) - SIN IMPLEMENTAR. Ver el plan en el informe.
+def ale_nlms(x, delta=10, L=64, mu=0.01, eps=1e-8):
+    """ETAPA 4 (Pili) - Mejorador adaptativo de linea (ALE) con NLMS.
 
-    Mejorador adaptativo de linea (ALE) con NLMS (Widrow et al. 1975;
-    Fotiadou et al. 2018):
-      referencia r[n] = x[n - delta]
-      y[n] = w[n] . r[n-L+1 .. n]        (estimacion de la parte correlacionada)
-      e[n] = x[n] - y[n]
-      w[n+1] = w[n] + mu * e[n] * r / (eps + ||r||^2)
-    Devolveria y (senal mejorada).
+    Widrow et al. 1975; Fotiadou et al. 2018. Se usa la propia senal
+    retrasada delta muestras como referencia:
+      r[n] = x[n - delta]                    (vector de las L muestras previas)
+      y[n] = w[n] . r[n]                     (parte correlacionada = ECG mejorado)
+      e[n] = x[n] - y[n]                     (lo que no se puede predecir = ruido)
+      w[n+1] = w[n] + mu * e[n] * r[n] / (eps + ||r[n]||^2)    (NLMS)
+    El ECG se repite latido a latido (correlacion larga); el ruido muscular se
+    decorrela en pocas muestras. Si delta es mayor que el ancho de la
+    autocorrelacion del ruido, el filtro solo puede predecir el ECG.
 
-    Parametros a elegir por busqueda en la MIT-BIH NSTDB (Moody et al. 1984):
-      delta: > ancho de la autocorrelacion del ruido (ma, em)
-      L:     20 a 320 coeficientes a 200 Hz (Fotiadou: 50-800 a 500 Hz)
-      mu:    0 < mu < 2 (NLMS); 8 valores log entre 0,0005 y 0,1
-    Se aplicaria solo a ventanas con ruidosa = 1 y se aceptaria si el
-    bSQI de la ventana filtrada queda >= 0,8.
+    Parametros:
+      delta: retardo en muestras (> ancho de autocorrelacion del ruido)
+      L:     cantidad de coeficientes (20 a 320 a 200 Hz)
+      mu:    paso, 0 < mu < 2
+    Devuelve (y, e): senal mejorada y error. Los primeros delta + L
+    muestras son el transitorio de convergencia: no usarlos para medir.
     """
-    # TODO (Pili): implementar
-    raise NotImplementedError("ALE pendiente (etapa 4)")
+    x = np.asarray(x, dtype=float)
+    n = len(x)
+    w = np.zeros(L)
+    y = np.zeros(n)
+    e = np.zeros(n)
+    for i in range(delta + L, n):
+        r = x[i - delta - L + 1:i - delta + 1][::-1]       # L muestras, la mas reciente primero
+        y[i] = w @ r
+        e[i] = x[i] - y[i]
+        w += mu * e[i] * r / (eps + r @ r)
+    return y, e
 
 
 def figura_filtrado(reg, t0_s=3600):
