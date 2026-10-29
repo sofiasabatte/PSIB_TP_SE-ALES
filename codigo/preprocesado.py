@@ -7,7 +7,7 @@
 #   [ ] Escribir el parrafo de la etapa 3 para el informe.
 # TODO (Pili, TP completo):
 #   [x] Etapa 4: ale_nlms() implementada.
-#   [ ] Etapa 4: correr evaluar_ale.py y documentar la decision (ver abajo).
+#   [x] Etapa 4: evaluar_ale.py corrido (128 combinaciones); decision: no se integra.
 # =============================================================================
 # ETAPA 3: filtrado y deteccion de ruido
 #

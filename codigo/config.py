@@ -1,6 +1,6 @@
 # =============================================================================
 # Lo usan todas. Si alguna cambia un parametro, avisar a las demas.
-# Pili: PASABANDA_HZ, NOTCH_HZ, UMBRAL_BSQI, UMBRAL_KSQI
+# Pili: PASABANDA_HZ, NOTCH_HZ, UMBRAL_BSQI, UMBRAL_KSQI, CRITERIO_RUIDO
 # Juani: TOL_QRS_S, REGISTROS, N_PROCESOS
 # Sofi: RR_MIN_S, RR_MAX_S, QUITAR_ECTOPICOS, VENTANA_LATIDOS, MIN_FRACCION_VALIDA
 # =============================================================================
